@@ -41,14 +41,19 @@ function calculadora(){
                     case '4': resultado = dividir(a,b);
                     console.log(`${a} / ${b} = ${resultado}`);
                     break;
-                    default: console.log('Operação invalida');break;
+                    default: console.log('digete um numero valido');break;
                 }
 
                 rl.close()
             })
         })
+    }else{
+        console.log('Operação invalida');
+        rl.close()
     }
     
     
     })
 }
+
+calculadora()
